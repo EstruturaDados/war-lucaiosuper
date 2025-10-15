@@ -11,8 +11,8 @@ struct Territorio {
 
 int main() {
     struct Territorio territorios[QTD_TERRITORIOS];
-    printf("===== CADASTRO DE TERRITORIOS DO JOGO WAR =====\n");
-    printf("Por favor, insira os dados para os %d territorios.\n\n", QTD_TERRITORIOS);
+    printf("CADASTRO DE TERRITORIOS\n");
+    printf("Por favor, cadastre os %d territorios iniciais.\n\n", QTD_TERRITORIOS);
     for (int i = 0; i < QTD_TERRITORIOS; i++) {
         printf("--- Cadastrando Territorio %d ---\n", i + 1);
         printf("Digite o nome do territorio: ");
@@ -23,7 +23,7 @@ int main() {
         scanf("%d", &territorios[i].tropas);
         printf("\n"); 
     }
-    printf("\n===== DADOS DOS TERRITORIOS CADASTRADOS =====\n\n");
+    printf("\nDADOS DOS TERRITORIOS CADASTRADOS\n\n");
     for (int i = 0; i < QTD_TERRITORIOS; i++) {
         printf("--- Territorio %d ---\n", i + 1);
         printf("Nome: %s\n", territorios[i].nome);
